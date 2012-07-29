@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<objects>
+	<object name="products" type="Products, northwind"/>
+	<object name="test" test="Product, northwind" />
+</objects>

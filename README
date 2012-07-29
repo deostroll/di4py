@@ -1,0 +1,9 @@
+This project is a simple example of 
+how to attain depedency injection in
+python
+
+The xml config was inspired by spring.net
+implementation - which is the .Net Framework's
+DI implementation
+
+
