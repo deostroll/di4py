@@ -1,5 +1,5 @@
 class Product:
-	def __init__(self, id, name, price):
+	def __init__(self, id='', name='', price=0):
 		self.id = id
 		self.name = name
 		self.price = price
@@ -19,17 +19,17 @@ class Products:
 		p3 = Product(3, 'Gizmo 3', '10.25')
 		self.__products = [p, p2, p3]
 	
-	def getProductById(self, id):
+	def get(self, id):
 		item = filter(lambda p: p.id == id, self.__products)
 		if len(item) == 0: 
 			return None
 		else:
 			return item[0]
 	
-	def getProducts(self):
+	def getAll(self):
 		return self.__products
 
-	def addProduct(self, product):
+	def add(self, product):
 		if isinstance(product, Product):
 			self.__products.append(product)
 		else:
